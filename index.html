@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animation</title>
+</head>
+
+<style>
+.Armaan{
+    position: relative;
+    bottom:0%;
+    left:45%;
+}
+
+.Mallik{
+    position: relative;
+    top: 0%;
+    right:60%;
+}
+
+.Music{
+    position: absolute;
+    bottom: 4%;
+    right: 41%;
+}
+
+.container{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.container span{
+    display: block;
+}
+
+.text1{
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    animation: text 6s 1;
+    animation-iteration-count: 6;
+}
+
+.text2{
+    font-size: 30px;
+    color: beige;
+    font-family: Georgia, serif;
+}
+
+@keyframes text{
+    0%{
+        color: #080808;
+        margin-bottom: -30px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -30px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -30px;
+    }
+}
+
+</style>
+
+
+
+
+<body style="background-color:#080808">
+    <div>
+    <img class="Armaan" src="https://assets.teenvogue.com/photos/61e194b6192e956300d6d02b/4:3/w_4099,h_3074,c_limit/Armaan%20Malik%203.jpg"
+    alt="Armaan Malik"
+    width="900" height="650">
+    <img class="Mallik" src="https://i.pinimg.com/originals/f1/86/76/f18676a6bd2f0f770713391856cba045.jpg"
+    alt="Malik"
+    width="599" height="650">
+    <audio controls class="Music">
+        <source src="https://pwdown.info/113514/Echo%20-%20Armaan%20Malik.mp3"
+        type="audio/mpeg"> 
+    </audio>
+    </div>
+    <div class="container">
+    <div class="row">
+         <span class="text1">ARMAAN <BR> MALIK</span>
+         <span class="text2"><br>Buddhu Sa Mann<br> Tootey Khaab<br> Zara Thehro <br> Besabriyaan <br> Sun Maahi <br> Sab Tera <br>Echo</span>
+    </div>
+    </div>
+
+</body>
+</html>
